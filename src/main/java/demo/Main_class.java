@@ -19,5 +19,17 @@
 		
 
 		}
+	
+
+		public boolean LastName(String testString) {
+			
+			String regex="^[A-Z]{1}[a-z]{2,}$";
+			Pattern pattern=Pattern.compile(regex);
+			Matcher match=pattern.matcher(testString);
+			boolean result2=match.find();
+			return result2;
+		
+	}
+
 	}
 

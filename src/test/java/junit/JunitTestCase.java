@@ -19,5 +19,12 @@ public class JunitTestCase {
 	 boolean result1=r.firstName("Ritesh");
 	 assertEquals(result1,true);
 		 }
+     
+     @Test
+     public void MatchLastName() {
+        	boolean result2=r.LastName("Khunte");
+        assertEquals(result2, true);
+
+}
 }
 
