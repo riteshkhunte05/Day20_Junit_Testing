@@ -26,5 +26,11 @@ public class JunitTestCase {
         assertEquals(result2, true);
 
 }
-}
+     
+     @Test
+     public void MatchEmailAddress() {
+        	boolean result3=r.EmailAddress("riteshkhunte05@gmail.com");
+        assertEquals(result3, true);
 
+}
+}

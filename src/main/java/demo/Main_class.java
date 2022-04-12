@@ -30,6 +30,14 @@
 			return result2;
 		
 	}
+		
+		public boolean EmailAddress(String testString) {
+			
+			String regex="^[a-z]*[0-9]*[a-z]*[@][a-z]*\\.[a-z]*$";
+			Pattern pattern=Pattern.compile(regex);
+			Matcher match=pattern.matcher(testString);
+			boolean result3=match.find();
+			return result3;
 
 	}
-
+	}
