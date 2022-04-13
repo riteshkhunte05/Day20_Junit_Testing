@@ -40,4 +40,14 @@
 			return result3;
 
 	}
+		
+        public boolean MobileNumber(String testString) {
+			
+			String regex="^[+][0-9]{2} [6-9]{1}[0-9]{9}$";
+			Pattern pattern=Pattern.compile(regex);
+			Matcher match=pattern.matcher(testString);
+			boolean result4=match.find();
+			return result4;
+		
+	}
 	}
