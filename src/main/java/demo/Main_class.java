@@ -69,4 +69,22 @@ public boolean passwordRule2(String testString) {
 	return result6;
 
 	}
+
+public boolean passwordRule3(String testString) {
+	
+	String regex="^[A-Z]{1}[a-z]*[0-9]*$";
+	Pattern pattern=Pattern.compile(regex);
+	Matcher match=pattern.matcher(testString);
+	boolean result7=match.find();
+	return result7;
+}
+
+public boolean passwordRule4(String testString) {
+	
+	String regex="^[A-Z]{1}[a-z]*@[0-9]*$";
+	Pattern pattern=Pattern.compile(regex);
+	Matcher match=pattern.matcher(testString);
+	boolean result8=match.find();
+	return result8;
+}
 }

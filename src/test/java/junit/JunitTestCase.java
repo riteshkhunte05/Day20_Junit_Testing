@@ -53,4 +53,16 @@ public class JunitTestCase {
         assertEquals(result6, true);
 
 }
+     
+     @Test
+     public void MatchPassward_1Numeric() {
+        	boolean result7=r.passwordRule3("Ritesh05");
+        assertEquals(result7, true);
+}
+     
+     @Test
+     public void MatchPassward_1SpecialChar() {
+        	boolean result8=r.passwordRule4("Ritesh@05");
+        assertEquals(result8, true);
+}
 }
