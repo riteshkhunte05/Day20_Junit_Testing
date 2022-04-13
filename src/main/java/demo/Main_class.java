@@ -59,4 +59,14 @@ public boolean passRule1(String testString) {
 			boolean result5=match.find();
 			return result5;
 	}
+
+public boolean passwordRule2(String testString) {
+	
+	String regex="^[A-Z]{1}[a-z]*$";
+	Pattern pattern=Pattern.compile(regex);
+	Matcher match=pattern.matcher(testString);
+	boolean result6=match.find();
+	return result6;
+
 	}
+}

@@ -46,4 +46,11 @@ public class JunitTestCase {
         	boolean result5=r.passRule1("abcdefpp123");
         assertEquals(result5, true);
 }
+     
+     @Test
+     public void MatchPassward_1Uppercase() {
+        	boolean result6=r.passwordRule2("Abcdefgh");
+        assertEquals(result6, true);
+
+}
 }
