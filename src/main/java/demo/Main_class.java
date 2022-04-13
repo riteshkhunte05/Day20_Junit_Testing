@@ -50,4 +50,13 @@
 			return result4;
 		
 	}
+        
+public boolean passRule1(String testString) {
+			
+			String regex="^[a-z]*[A-Z]*[0-9]*$";
+			Pattern pattern=Pattern.compile(regex);
+			Matcher match=pattern.matcher(testString);
+			boolean result5=match.find();
+			return result5;
+	}
 	}

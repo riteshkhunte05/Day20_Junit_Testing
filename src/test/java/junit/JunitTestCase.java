@@ -40,4 +40,10 @@ public class JunitTestCase {
         assertEquals(result4, true);
 
 }
+     
+     @Test
+     public void MatchPassward_8_Character() {
+        	boolean result5=r.passRule1("abcdefpp123");
+        assertEquals(result5, true);
+}
 }
